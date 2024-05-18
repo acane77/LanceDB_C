@@ -1,0 +1,16 @@
+[package]
+name = "lancedb_c_api"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "lancedb_c"
+crate-type = ["staticlib"]
+
+[dependencies]
+lancedb = "0.4.20"
+tokio = "1.37.0"
+lazy_static = "1.4.0"
+arrow-schema = "51.0.0"
+arrow-array = "51.0.0"
+futures-util = "0.3.30"
